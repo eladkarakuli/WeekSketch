@@ -3,3 +3,17 @@
   Showing of 'interpolate' filter:
   {{ 'Current version is v%VERSION%.' | interpolate }}
 </p>
+<div role="main">
+    <div class="container">
+        <section id="directives-calendar" ng-controller="CalendarCtrl">
+            <div class="page-header">
+                <h1>UI-Calendar</h1>
+            </div>
+            <div class="well">
+                <div class="row-fluid">
+                    <div ui-calendar="uiConfig.calendar" class="span8 calendar" ng-model="eventSources"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

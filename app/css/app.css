@@ -28,3 +28,6 @@
   content: "";
   padding: 0;
 }
+
+/* angluar bootstarp href recommand */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
