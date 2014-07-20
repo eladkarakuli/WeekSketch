@@ -19,9 +19,10 @@ function CalendarCtrl($scope) {
     $scope.changeTo = 'Hungarian';
     /* event source that pulls from google.com */
     $scope.eventSource = {
-            url: "http://www.google.com/calendar/feeds/usa__en%40holiday.calendar.google.com/public/basic",
+            url: "https://www.google.com/calendar/feeds/e0mmbl7tourh1uip0al9fi7j7k%40group.calendar.google.com/public/basic",
             className: 'gcal-event',           // an option!
-            currentTimezone: 'America/Chicago' // an option!
+            color: 'green',
+            currentTimezone: 'Asia/Jerusalem' // an option!
     };
     /* event source that contains custom events on the scope */
     $scope.events = [
@@ -124,6 +125,6 @@ function CalendarCtrl($scope) {
       }
     };
     /* event sources array*/
-    $scope.eventSources = [$scope.events, $scope.eventSource, $scope.eventsF];
-    $scope.eventSources2 = [$scope.calEventsExt, $scope.eventsF, $scope.events];
+    $scope.eventSources = [$scope.events, $scope.eventSource];
+    $scope.eventSources2 = [$scope.calEventsExt, $scope.events];
 }
